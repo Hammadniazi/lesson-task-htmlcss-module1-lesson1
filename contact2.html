@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get real authentic, hand-crafted Guitars from Guitar King "
+    />
+    <link rel="stylesheet" href="/css/style1.css" />
+    <script
+      src="https://kit.fontawesome.com/3cc0008f2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Guitar King | Home</title>
+  </head>
+
+  <body>
+    <header class="l-header">
+      <section class="c-nav-bar">
+        <div class="c-logo">Guitar King</div>
+        <nav class="c-nav-bar-lists">
+          <a href="index.html">Home</a>
+          <a href="guitars.html">Guitars</a>
+          <a href="contact.html" class="sale">Contact</a>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <fieldset class="l-set">
+        <div>
+          <h1>Contact Form</h1>
+        </div>
+        <form action="form-success.php" method="get" class="c-form">
+          <div>
+            <label for="First Name">First Name</label>
+            <input
+              type="text"
+              id="First Name"
+              name="First Name"
+              placeholder="Name"
+              class="c-input"
+            />
+          </div>
+          <div>
+            <label for="Last Name">Last Name</label>
+            <input
+              type="text"
+              id="Last Name"
+              name="Last Name"
+              placeholder="optional"
+              class="c-input"
+            />
+          </div>
+          <div>
+            <label for="Email">Email</label>
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              placeholder="Email..."
+              class="c-input"
+            />
+          </div>
+          <div>
+            <label for="Phone">Phone</label>
+            <input
+              type="tel"
+              id="Phone"
+              name="Phone"
+              placeholder="tell#..."
+              class="c-input"
+            />
+          </div>
+          <div>
+            <label for="Passward">Passward</label>
+            <input
+              type="text"
+              id="Passward"
+              name="Passward"
+              placeholder="Passward..."
+              required
+              class="c-input"
+            />
+          </div>
+
+          <label for="message">Your message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="c-message"
+            rows="5"
+            cols="30"
+          ></textarea>
+
+          <label for="">Select City</label>
+          <input list="cities" name="city" id="city" />
+
+          <datalist id="cities">
+            <option value="oslo"></option>
+            <option value="bergen"></option>
+            <option value="trondheim"></option>
+          </datalist>
+
+          <div class="c-radio">
+            <p>Preffered mathod for to contact</p>
+            <input type="radio" name="cont" id="Email" />
+            <label for="Email">Email</label>
+            <input type="radio" name="cont" id="Phone" />
+            <label for="Phone">Phone call</label>
+            <input type="radio" name="cont" id="Text" />
+            <label for="Text">Text</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Send me a copy by email</label>
+          </div>
+
+          <div><input type="Submit" /></div>
+
+          <!-- min and max length -->
+          <!-- <label for="username">Username:</label>
+	        <input type="text" id="username" name="username" minlength="3" maxlength="20" /> -->
+        </form>
+      </fieldset>
+    </main>
+
+    <footer class="l-footer u-sec-gutter">
+      <small> Copyright &copy; </small>
+    </footer>
+  </body>
+</html>

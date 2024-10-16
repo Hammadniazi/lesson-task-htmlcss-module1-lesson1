@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.l-header {
+  flex: 1 0 auto;
+  /* font-family: "Rubik Bubbles", system-ui; */
+}
+
+.l-main {
+  flex: 2 1 auto;
+  overflow-y: scroll;
+}
+
+.l-footer {
+  flex: 1 0 auto;
+}
+
+/* my own contact form just for practicing */
+/* About us/form  */
+.l-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  height: auto;
+  margin: 40px auto;
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+.c-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 0.5rem;
+  color: #bb0000;
+}
+.c-input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+/* Css Attribute Selector.Its allow to do css by shared attribute */
+
+/* input[type='text'] {
+  padding: 5px;
+  width: 100%;
+}  */
+
+input[type="submit"] {
+  background-color: rgb(61, 28, 207);
+  color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+.c-footer {
+  background-color: #202020;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 10px;
+}
